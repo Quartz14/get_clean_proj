@@ -2,9 +2,6 @@
 title: "CodeBook.md"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 # Variables used
 
 train_x stores the x data in train directory
