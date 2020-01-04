@@ -71,6 +71,7 @@ clean_df[is.na(clean_df)]
 tail(clean_df,1)
 clean_df[is.na(clean_df)]
 write.table(clean_df,"clean_data.csv",sep=",",row.names = FALSE)
+write.table(clean_df,"clean_data.txt",row.names = FALSE)
 
 # part 5 summarizing data by activity,person
 summary_clean_df <- aggregate(clean_df,by=list(action=clean_df$activity,subject=clean_df$person),FUN = mean)
